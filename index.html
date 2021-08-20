@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Agency - Start Bootstrap Theme</title>
+</head>
+<body>
+    <nav class= "navbar">
+       <div class="container">
+            <a class="navbar-brand">
+                <img class=navbar-logo src="navbar-logo.svg"  alt="Start Bootstrap">
+            </a>
+            <button class="navbar-toggler" onclick="toggler()">MENU &#9776</button>
+
+       </div>
+        <div class="navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">PORTFOLIO</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">ABOUT</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">TEAM</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">CONTACT</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <header class="main-header">
+        <div class="container-two">
+            <div class="main-header-subheading">Welcome To Our Studio!</div>
+            <div class="main-header-uppercase">IT'S NICE TO MEET YOU</div>
+            <button class="button">TELL ME MORE</a>
+
+            </div>
+
+    </header>
+    <script>
+        function toggler(){
+
+            if(document.getElementById("navbar-collapse").style.height == "0px" || document.getElementById("navbar-collapse").style.height == ""){
+
+                document.getElementById("navbar-collapse").style.height = "175px";                
+                //document.getElementById("navbar-collapse").style.transition = "1s";
+            }
+            else {
+
+
+                document.getElementById("navbar-collapse").style.height = "0px";
+                //document.getElementById("navbar-collapse").style.transition = "all 1s";
+            }
+
+
+            /*if(document.getElementById("navbar-collapse").style.display == "none"){
+                document.getElementById("navbar-collapse").style.display = "block";
+            }
+            else {
+                document.getElementById("navbar-collapse").style.display = "none";
+            }
+            */
+
+        }
+    </script>
+</body>
+</html>

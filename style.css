@@ -1,0 +1,139 @@
+
+body {
+    height: 100vh;
+    background-image: url(header-bg.jpg);
+    background-size: cover;
+    padding-top: 61px;
+}
+
+.navbar{
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #212529;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.navbar-logo {
+    width: 140px;
+    height: 40px;
+}
+.navbar-toggler {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255,.1);
+    cursor: pointer;
+    border-radius: .25rem;
+    background-color: transparent;
+}
+
+.main-header {
+    background-size: cover;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.container-two {
+    font-family: 'Montserrat', sans-serif;
+}
+.main-header {
+    color: #fff;
+}
+.main-header-subheading {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+.navbar-uppercase {
+    list-style: none;
+}
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-bottom: 16px;
+}
+.nav-item:hover {
+    color: #ffc803;
+    cursor: pointer;
+
+}
+.main-header-uppercase {
+    font-size: 64px;
+    margin-bottom: 64px;
+}
+.button {
+    background-color: #ffc803;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+.button:hover {
+    background-color: #d9aa00;
+    transition: background-color .10s ease-in-out;
+}
+.navbar-collapse {
+    transition: 0.3s;
+    overflow: hidden;
+    height: 0px;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        display:flex;
+        padding-top: 16px;
+        background-color:transparent;
+        padding-bottom: 16px;
+    }
+    .navbar .container {
+        display:inline-block;
+    }
+    .navbar-toggler {
+    display: none;
+    }
+
+    .navbar-uppercase {
+       /* display: none; */
+        background-color: transparent;
+        padding-right:25px;
+
+    }
+    .navbar {
+        padding:5px;
+    }
+
+    .navbar-collapse {
+       flex:1;
+       padding-right:25px;
+       text-align:right;
+       transition: 0.3s;
+       height: auto !important;
+    }
+
+    .navbar-collapse .nav-item{
+        display:inline;
+        padding: 0 10px;
+
+    }
+    .container {
+        display:inline;
+    }
+
+
+}
